@@ -7,7 +7,7 @@
 
 * Include hits for:
     * Spotify API
-     *OMDB
+    * OMDB
     * Bands in Town
 
 
@@ -20,5 +20,5 @@ Returns the info about the movie. If there's no input, it will retrieve the info
 ## Command: concert-this <artist>
 Info about coming live shows for the specified artist.
 
-## Command: do what it says
+## Command: do-what-it-says
 Read the .txt file and retrieves the information from the commands written there. 
