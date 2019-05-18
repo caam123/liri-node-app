@@ -23,13 +23,22 @@ var queryArray = [];
 
 function spotifyThis(){
 
-    queryArray = [];
-    for (var i = 3; i < argument.length; i++) {
-        queryArray.push(argument[i]);
-    };
-    query = queryArray.join(" ")
 
-    //If no song is provided, then display The sign info...
+   if(command === "spotify-this-song") {
+
+     queryArray = [];
+        for (var i = 3; i < argument.length; i++) {
+            queryArray.push(argument[i]);  
+        }; 
+
+    query = queryArray.join("");
+
+    }
+
+    if(command === "do-what-it-says"){
+        query = query
+    };
+
     
     if(command === "spotify-this-song" && query === ""){
         query = "The Sign Ace of Base"
@@ -132,11 +141,9 @@ function myRandom(){
         }
 
         var randomArray = data.split(",");       
-        command = randomArray[0];
+        //command = randomArray[0];
         query = randomArray[1];
 
-        console.log(command);
-        console.log(query)
 
         spotifyThis();
         
